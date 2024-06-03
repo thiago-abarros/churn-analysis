@@ -50,12 +50,12 @@ c1, c2, c3 = st.columns(3)
 with c1:
     st.header('Mediana')
     st.metric(label='Mediana',
-              value=df_limpo[coluna_escolhida].mean().round(1), delta=None)
+              value=df_limpo[coluna_escolhida].mean().__round__(1), delta=None)
 with c2:
     st.header('Média')
     st.metric(label='Média',
               value=df_limpo[coluna_escolhida].median(),
-              delta=((df_limpo[coluna_escolhida].mean() - df_limpo[coluna_escolhida].median()).round(4)))
+              delta=((df_limpo[coluna_escolhida].mean() - df_limpo[coluna_escolhida].median()).__round__(4)))
 with c3:
     st.header('Soma Geral')
     st.metric(label='Relação com o Churn',
