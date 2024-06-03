@@ -25,11 +25,11 @@ from xgboost import XGBClassifier
 
 # Métodos de Machine Learning
 import tensorflow as tf
-from tensorflow import keras
-from keras.models import Sequential
-from keras.layers import Activation, Dense
-from keras.optimizers import Adam
-from keras.metrics import categorical_crossentropy
+from tensorflow.python import keras 
+from keras.src import Sequential
+from keras.src.layers import Activation, Dense
+from keras.src.optimizers import Adam
+from keras.src.losses import categorical_crossentropy
 
 # Ignorando os alertas
 from warnings import simplefilter, filterwarnings
